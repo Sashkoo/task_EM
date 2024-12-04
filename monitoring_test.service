@@ -1,0 +1,13 @@
+[Unit]
+Description=Monitoring test process service
+
+[Service]
+Type=simple
+ExecStart=/etc/monitoring/test_process_monitoring.sh
+Restart=always
+RestartSec=60
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
